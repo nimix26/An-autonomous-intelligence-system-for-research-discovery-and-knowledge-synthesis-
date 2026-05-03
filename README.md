@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <h1 align="center">🧠 CogniView.AI</h1>
   <p align="center">
@@ -589,3 +590,7 @@ This project is developed as an academic/semester project. See the repository fo
 <p align="center">
   <strong>Built with ❤️ by the CogniView.AI team</strong>
 </p>
+=======
+# An-autonomous-intelligence-system-for-research-discovery-and-knowledge-synthesis-
+“An autonomous AI platform that automates research discovery by breaking complex research tasks into smaller intelligent units that work together to find, understand, compare literature, and generate new ideas.”
+>>>>>>> b4d2fc6a7ae7f19404e8dd2a9a5edff56e87ffcb
