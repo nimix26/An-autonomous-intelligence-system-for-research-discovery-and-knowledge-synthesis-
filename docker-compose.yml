@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - '8000:8000'
+    env_file:
+      - src/.env
+    volumes:
+      - ./src/downloaded_pdfs:/app/downloaded_pdfs
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - '80:80'
+    depends_on:
+      - backend

@@ -1,0 +1,58 @@
+/* ═══════════════ TRANSITION ANIMATION — DARK THEME ═══════════════ */
+
+.transition-animation-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(230, 242, 252, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    animation: transitionFadeIn 0.4s ease-out;
+}
+
+@keyframes transitionFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.transition-animation-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.transition-animation-label {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: 600;
+    color: #2566b8;
+    letter-spacing: 0.06em;
+    animation: labelPulse 2s ease-in-out infinite;
+    z-index: 1;
+    text-shadow: 0 0 20px rgba(37, 102, 184, 0.3);
+}
+
+@keyframes labelPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
